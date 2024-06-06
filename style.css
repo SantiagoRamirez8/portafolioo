@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.image{
+    width: 35vw;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 225, 255);
+}
+.header-content{
+    
+}
+
+.header-content2{
+    width: 18rem;
+}
