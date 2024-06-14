@@ -1,13 +1,19 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
 }
-
-.image{
-    width: 33vw;
+body{
+    width: 100vw;
 }
+.image{
+    width: 150px;
+    height: 200px;
+    border: 2px solid #ffffff;
+    margin-bottom: 17px;
+  }
 header{
     width: 100%;
     height: 20rem;
@@ -20,47 +26,64 @@ h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.header-content2{
-    width: 18rem;
-}
+.header h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 160px;
+    margin-left: -100px;
+  }
+  
+  header-text {
+    flex: 1;
+  }
 main {
     width: 100%;
     height: 50rem;
     background-color: #00000049;
     padding: 1rem;
 }
-.projects >h2{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 .projects {
-    width: 100%;
+    padding: 0px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.container-projects {
-    width: 100%;
-    height: auto;
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.container-projects > .card {
-    width: 19rem;
-    height: 10rem;
-    margin: 3rem;
-    background-color: rgb(2, 225, 255);
+   
+  }
+  
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 17px;
+  }
+  
+  .project {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    border-radius: 3px;
-    color: #000000;
-    border: 3px solid rgb(0, 0, 0);
-}
+    margin-bottom: 17px;
+    background-color: #0066ffaf;
+    color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .project img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 10px;
+  }
+  
+  .project-info h3 {
+    margin-bottom: 10px;
+  }
+  
+  .project-info p {
+    font-size: 12px;
+  }
+  
 
 
 
@@ -87,8 +110,17 @@ footer {
     color: #ffffffb6;
 }
   
-
-
+@media screen and (max-width: 852px) {
+    .project {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 975px) {
+    .project {
+      width: 80%;
+    }
+  }
 
 
 
